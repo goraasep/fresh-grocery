@@ -2,26 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* @font-face {
+  font-family: "SFProDisplay";
+  src: url("/public/fonts/SFPRODISPLAYBLACKITALIC.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYBOLD.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYHEAVYITALIC.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYITALIC.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYLIGHTITALIC.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYMEDIUMITALIC.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYSEMIBOLDITALIC.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYTHINITALIC.OTF") format("opentype"),
+    url("/public/fonts/SFPRODISPLAYULTRALIGHTITALIC.OTF") format("opentype");
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+  font-weight: normal;
+  font-style: normal;
+} */
