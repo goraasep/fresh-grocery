@@ -3,26 +3,9 @@ import axios from "axios";
 
 const fetchProducts = async () => {
   const { data } = await axios.get("http://localhost:8000/products");
-  console.log(data);
   return data;
 };
 
-async function getData() {
-  const options = {
-    method: "GET",
-    headers: {
-      accept: "application/json",
-    },
-  };
-
-  let URL = "http://localhost:8000/products";
-
-  const response = fetch(URL, options)
-    .then((response) => response.json())
-    .catch((err) => console.error(err));
-
-  return response;
-}
 const useProduct = () => {
   const {
     isFetching,
@@ -32,8 +15,7 @@ const useProduct = () => {
     data: products,
   } = useQuery({
     queryKey: ["fetchProducts"],
-    queryFn: async () =>
-      (await axios.get("http://localhost:8000/products")).data,
+    queryFn: async () => fetchProducts(),
     staleTime: 60 * 1000,
     gcTime: 60 * 1000,
   });
