@@ -5,6 +5,7 @@ import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { FC } from "react";
+import OverlayItem from "../OverlayItem";
 
 interface Props {
   product: Product;
@@ -33,6 +34,9 @@ const Card: FC<Props> = ({ product }) => {
       removeItem(parseInt(productInCart.id, 10));
     }
   };
+  // const handleClickImage = () => {
+  //   return <OverlayItem productId={parseInt(product.id)} />;
+  // };
   return (
     <div className="bg-[#F9F8F6] flex flex-col p-3">
       <Image
@@ -41,6 +45,7 @@ const Card: FC<Props> = ({ product }) => {
         width={150}
         height={150}
         alt=""
+        // onClick={handleClickImage}
       />
       <div className="font-semibold text-2xl">${product.price}</div>
       <div>{product.name}</div>

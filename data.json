@@ -9,7 +9,25 @@
       "id": "4b63"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "id": "0",
+      "price": 0.0032,
+      "weight": 1000,
+      "name": "Beetles",
+      "category": "Exotic",
+      "imageUrl": "/products/beetles.png",
+      "metadata": {
+        "unit": "g",
+        "weight": 100,
+        "calorie": 190,
+        "proteins": 24,
+        "fats": 9,
+        "increment": 100,
+        "carbs": 2
+      }
+    }
+  ],
   "products": [
     {
       "price": 0.0032,
